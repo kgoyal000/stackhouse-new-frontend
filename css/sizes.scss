@@ -1,0 +1,76 @@
+.sizes__prints{
+	padding-top: 56px;
+	& .outer__sizes{
+		& .table__box{
+			width: 100%;
+			& table{
+				width: 100%;
+				border-collapse: collapse;
+				border-spacing: 0px;
+				& tr:nth-child(even) td{
+					background-color:#F2F2F2;
+				}
+				& tr:hover td{
+					background-color:#ddd;
+				}
+				& tr td{
+					padding:8px;
+					border:1px solid #ddd;
+					&>p{
+						font-size: 17px;
+						color:#1b1b1b;
+						line-height: 23px;
+						text-align:center;
+						margin:0px;
+					}
+				}
+				& tr th{
+					padding:8px;
+					background-color:#25718a;
+					&>p{
+						font-size: 17px;
+						line-height: 23px;
+						color:#fff;
+						margin:0px;
+					}
+					border-right:1px solid #ddd;
+					&:last-child{
+						border-right: 0px;
+					}
+				}
+			}
+		}
+		&>h6{
+			margin-top: 0px;
+			color:#454545;
+			font-weight: bold;
+			font-family:"Bitter" ,sans-serif;
+			font-size: 23px;
+			line-height: 27px;
+			margin-bottom: 20px;
+		}
+	}
+}
+@media (max-width: 991px){
+	.sizes__prints .outer__sizes>h6{
+		font-size: 20px;
+		line-height: 24px;
+		margin-bottom: 12px;
+	}
+	.sizes__prints{
+		padding-top: 30px;
+	}
+}
+@media (max-width: 480px){
+	.sizes__prints .outer__sizes .table__box table tr th>p{
+		font-size: 13px;
+		line-height: 16px;
+	}
+	.sizes__prints .outer__sizes .table__box table tr td>p{
+		font-size: 13px;
+		line-height: 16px;
+	}
+	.sizes__prints .outer__sizes .table__box table tr th{
+		padding:8px 4px;
+	}
+}

@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		@media (max-width: 991px){
+			.outer__hero{
+				display: flex;
+			}
+		}
+	</style>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+	    rel="preload"
+	    href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap"
+	    as="style"
+	    onload="this.onload=null;this.rel='stylesheet'"
+	/>
+	<noscript>
+	    <link
+	        href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap"
+	        rel="stylesheet"
+	        type="text/css"
+	    />
+	</noscript>
+
+	<link rel="preload" as="image" href="img/logo.webp" />
+	<link rel="preload" as="image" href="img/search.svg" />
+	<link rel="preload" as="image" href="img/shop.svg" />
+	<link rel="preload" as="image" href="img/heroimage1.webp" />
+	<link rel="preload" as="image" href="img/feature1.svg" />
+	<link rel="preload" as="image" href="img/feature2.svg" />
+	<link rel="preload" as="image" href="img/feature3.svg" />
+</head>
+<body>
+	<div class="overlay"></div>
+	<div class="menu__mobile">
+		<div class="main__step">
+			<div class="title">
+				<h6>Menu</h6>
+				<a href="#">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+				</a>
+			</div>
+			<ul>
+				<li><a href="#" class="sub__menu" data-id="printing">Printing <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+				  <title>Right</title>
+				  <path d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"></path><path d="M0-.25h24v24H0z" fill="none"></path>
+				</svg></a></li>
+				<li><a href="#">Art Scanning</a></li>
+				<li><a href="#" class="sub__menu" data-id="info">Info <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+				  <title>Right</title>
+				  <path d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"></path><path d="M0-.25h24v24H0z" fill="none"></path>
+				</svg></a></li>
+				<li><a href="#" class="order__now">Order Now</a></li>
+				<li><a href="#">Account</a></li>
+			</ul>
+		</div>
+
+		<div class="secondary__step" data-id="printing">
+			<div class="back__btn">
+				<a href="#"><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+				  <title>Left</title>
+				  <path d="M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z"></path><path d="M0-.5h24v24H0z" fill="none"></path>
+				</svg> Back</a>
+			</div>
+			<ul>
+				<li><a href="#" class="inner__menu" data-id="prints">Prints <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+				  <title>Right</title>
+				  <path d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"></path><path d="M0-.25h24v24H0z" fill="none"></path>
+				</svg></a></li>
+				<li><a href="#" class="inner__menu" data-id="wallart">Wall Art <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+				  <title>Right</title>
+				  <path d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"></path><path d="M0-.25h24v24H0z" fill="none"></path>
+				</svg></a></li>
+				<li><a href="#" class="inner__menu" data-id="packaged">Packaged <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+				  <title>Right</title>
+				  <path d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"></path><path d="M0-.25h24v24H0z" fill="none"></path>
+				</svg></a></li>
+				<li><a href="#" class="inner__menu" data-id="samples">Samples <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+				  <title>Right</title>
+				  <path d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"></path><path d="M0-.25h24v24H0z" fill="none"></path>
+				</svg></a></li>
+			</ul>
+		</div>
+
+		<div class="secondary__step" data-id="prints" data-parent='printing'>
+			<div class="back__btn">
+				<a href="#"><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+				  <title>Left</title>
+				  <path d="M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z"></path><path d="M0-.5h24v24H0z" fill="none"></path>
+				</svg> Back</a>
+			</div>
+			<ul>
+				<li><a href="#">Giclee </a></li>
+				<li><a href="#">Photo </a></li>
+				<li><a href="#">Canvas </a></li>
+				<li><a href="#">Minis </a></li>
+			</ul>
+		</div>
+
+
+		<div class="secondary__step" data-id="wallart" data-parent='printing'>
+			<div class="back__btn">
+				<a href="#"><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+				  <title>Left</title>
+				  <path d="M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z"></path><path d="M0-.5h24v24H0z" fill="none"></path>
+				</svg> Back</a>
+			</div>
+			<ul>
+				<li><a href="#">Mounts </a></li>
+				<li><a href="#">Gallery Wraps </a></li>
+			</ul>
+		</div>
+
+		<div class="secondary__step" data-id="packaged" data-parent='printing'>
+			<div class="back__btn">
+				<a href="#"><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+				  <title>Left</title>
+				  <path d="M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z"></path><path d="M0-.5h24v24H0z" fill="none"></path>
+				</svg> Back</a>
+			</div>
+			<ul>
+				<li><a href="#">Bagged </a></li>
+				<li><a href="#">Retail Ready </a></li>
+				<li><a href="#">Matting Package</a></li>
+			</ul>
+		</div>
+
+		<div class="secondary__step" data-id="samples" data-parent='printing'>
+			<div class="back__btn">
+				<a href="#"><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+				  <title>Left</title>
+				  <path d="M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z"></path><path d="M0-.5h24v24H0z" fill="none"></path>
+				</svg> Back</a>
+			</div>
+			<ul>
+				<li><a href="#">Media Samples </a></li>
+			</ul>
+		</div>
+
+
+
+		<div class="secondary__step" data-id="info">
+			<div class="back__btn">
+				<a href="#"><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+				  <title>Left</title>
+				  <path d="M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z"></path><path d="M0-.5h24v24H0z" fill="none"></path>
+				</svg> Back</a>
+			</div>
+			<ul>
+				<li><a href="#">Get Started</a></li>
+				<li><a href="#">Pricing</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">FAQ</a></li>
+				<li><a href="#">Contact Us</a></li>
+				<li><a href="#">Consultation</a></li>
+			</ul>
+		</div>
+	</div>
+	<header>
+		<div class="top__header">
+			<div class="container">
+				<div class="mobile__info">
+					<div class="menu">
+						<a href="#">
+							<span></span>
+							<span></span>
+							<span></span>
+						</a>
+					</div>
+					<div class="logo">
+						<a href="#">
+							<img src="img/logo.webp" alt="logo" width="150" height="52">
+						</a>
+					</div>
+				</div>
+				<div class="outer__header">
+					<div class="float"></div>
+					<div class="search">
+						<div class="search__box" style="display:none;">
+							<form action="">
+								<input type="text" placeholder="Search...">
+								<button type="submit"><svg width="19px" height="21px" viewBox="0 0 19 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							  <g  stroke-width="0.5">
+							    <g transform="translate(0.000000, 0.472222)">
+							      <path d="M14.3977778,14.0103889 L19,19.0422222 L17.8135556,20.0555556 L13.224,15.0385 C11.8019062,16.0671405 10.0908414,16.619514 8.33572222,16.6165556 C3.73244444,16.6165556 0,12.8967778 0,8.30722222 C0,3.71766667 3.73244444,0 8.33572222,0 C12.939,0 16.6714444,3.71977778 16.6714444,8.30722222 C16.6739657,10.4296993 15.859848,12.4717967 14.3977778,14.0103889 Z M8.33572222,15.0585556 C12.0766111,15.0585556 15.1081667,12.0365 15.1081667,8.30827778 C15.1081667,4.58005556 12.0766111,1.558 8.33572222,1.558 C4.59483333,1.558 1.56327778,4.58005556 1.56327778,8.30827778 C1.56327778,12.0365 4.59483333,15.0585556 8.33572222,15.0585556 Z"></path>
+							    </g>
+							  </g>
+							</svg></button>
+							</form>
+						</div>
+						<a href="#">
+							<img src="img/search.svg" alt="search" width="21" height="21">
+						</a>
+					</div>
+					<div class="profile">
+						<a href="#">
+							<svg aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+							  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+							  <circle cx="12" cy="7" r="4"></circle>
+							</svg>
+						</a>
+					</div>
+					<div class="shop">
+						<a href="#">
+							<img src="img/shop.svg" alt="shop" width="24" height="24">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header__menu">
+			<div class="container">
+				<div class="menu">
+					
+					<a href="#">
+						<img src="img/logo.webp" alt="logo" width="150" height="52">
+					</a>
+					<div class="menu__list">
+						<ul>
+							<li>
+								<a href="#" class="printing__btn">Printing <span><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+							    <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"></path>
+							    <path d="M0-.75h24v24H0z" fill="none"></path>
+							</svg></span></a>
+							<div class="packages__menu">
+								<div class="list">
+									<div class="el">
+										<a href="#">Prints</a>
+										<ul>
+											<li><a href="#">Giclee</a></li>
+											<li><a href="#">Photo</a></li>
+											<li><a href="#">Canvas</a></li>
+											<li><a href="#">Minis</a></li>
+										</ul>
+									</div>
+									<div class="el">
+										<a href="#">Wall Art</a>
+										<ul>
+											<li><a href="#">Mounts</a></li>
+											<li><a href="#">Gallery Wraps</a></li>
+										</ul>
+									</div>
+									<div class="el">
+										<a href="#">Packaged</a>
+										<ul>
+											<li><a href="#">Bagged</a></li>
+											<li><a href="#">Retail Ready</a></li>
+											<li><a href="#">Matting Package</a></li>
+										</ul>
+									</div>
+									<div class="el">
+										<a href="#">Samples</a>
+										<ul>
+											<li><a href="#">Media Samples</a></li>
+										</ul>
+									</div>
+								</div>
+								<a href="#" class="more">
+									<div class="media">
+										<img src="img/frontpage.webp" alt="front" loading="lazy" width="225" height="145">
+									</div>
+									<span>View All Products</span>
+								</a>
+							</div>
+						</li>
+							<li><a href="#">Art Scanning</a></li>
+							<li class="info__relative">
+								<a href="#">Info <span><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+							    <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"></path>
+							    <path d="M0-.75h24v24H0z" fill="none"></path>
+							</svg></span></a>
+							<div class="info__popup">
+								<ul>
+									<li><a href="#">Get Started</a></li>
+									<li><a href="#">Pricing</a></li>
+									<li><a href="#">About Us</a></li>
+									<li><a href="#">Blog</a></li>
+									<li><a href="#">FAQ</a></li>
+									<li><a href="#">Contact Us</a></li>
+									<li><a href="#">Consultation</a></li>
+								</ul>
+							</div>
+						</li>
+							<li><a href="#" class="order">Order Now</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="hero__slider">
+		<a href="#" class="btn__back"><svg fill="#fff" viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M 14.51,6.51 14,6 8,12 14,18 14.51,17.49 9.03,12 Z"></path></svg></a>
+		<a href="#" class="btn__next"><svg fill="#fff" viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M 10,6 9.49,6.51 14.97,12 9.49,17.49 10,18 16,12 Z"></path></svg></a>
+		<div class="outer__hero">
+			<div class="elem__slide">
+				<div class="slide">
+					<div class="media">
+						<picture>
+							<source srcset="img/heroimage1.webp" media="(min-width: 481px)" type="image/webp">
+					        <source srcset="img/heroimage1mobile.webp" media="(max-width: 480px)" type="image/webp">
+							<img src="img/heroimage1mobile.webp" alt="heroplate" width="1920" height="675">
+						</picture>
+					</div>
+					<div class="container">
+						<div class="desc left">
+							<h2 class="animated">Discover  Our New Mini Prints</h2>
+							<p class="animated">Big Art, Small Package</p>
+							<div class="btn animated">
+								<a href="#">Shop Mini Prints</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="elem__slide">
+				<div class="slide">
+					<div class="media">
+						<picture>
+							<source srcset="img/heroimage2.webp" media="(min-width: 481px)" type="image/webp">
+					        <source srcset="img/heroimage2mobile.webp" media="(max-width: 480px)" type="image/webp">
+							<img src="img/heroimage2mobile.webp" alt="heroplate" width="1920" height="675">
+						</picture>
+					</div>
+					<div class="container">
+						<div class="desc right">
+							<h2>High-Quality Picture Printing</h2>
+							<p>Elevate Your Images</p>
+							<div class="btn">
+								<a href="#">Explore Our Printing Options</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="elem__slide">
+				<div class="slide">
+					<div class="media">
+						<picture>
+							<source srcset="img/heroimage1.webp" media="(min-width: 481px)" type="image/webp">
+					        <source srcset="img/heroimage1mobile.webp" media="(max-width: 480px)" type="image/webp">
+							<img src="img/heroimage1mobile.webp" alt="heroplate" width="1920" height="675">
+						</picture>
+					</div>
+					<div class="container">
+						<div class="desc center">
+							<h2>High-Quality Picture Printing</h2>
+							<p>Elevate Your Images</p>
+							<div class="btn">
+								<a href="#">Explore Our Printing Options</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="features">
+		<div class="container">
+			<div class="outer__features">
+				<div class="el">
+					<div class="media">
+						<img src="img/feature1.svg" alt="feature" width="36" height="36">
+					</div>
+					<div class="desc">
+						<p>Satisfaction Guarantee</p>
+						<p>On all orders</p>
+					</div>
+				</div>
+				<a href="#" class="el">
+					<div class="media">
+						<img src="img/feature2.svg" alt="feature" width="36" height="36">
+					</div>
+					<div class="desc">
+						<p>Need Help?</p>
+						<p>Schedule a consultation</p>
+					</div>
+				</a>
+				<div class="el">
+					<div class="media">
+						<img src="img/feature3.svg" alt="feature" width="36" height="36">
+					</div>
+					<div class="desc">
+						<p>No-Contact Delivery</p>
+						<p>Free on orders over $100</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="info__wrapper">
+		<div class="container">
+			<div class="outer__info">
+				<div class="top">
+					<h6>Professional Printing for Photographers and Artists</h6>
+					<p>We pride ourselves on offering high-quality picture printing services. Whether you’re a professional photographer or an artist looking for top-notch printing solutions, we’ve got you covered. Our professional printing ensures your work is displayed with the best quality possible.</p>
+					<div class="btn">
+						<a href="#">Get Started</a>
+					</div>
+				</div>
+				<div class="grid">
+					<a href="#" class="elem">
+						<picture>
+							<source srcset="img/tab1.webp" media="(min-width: 481px)" type="image/webp">
+					        <source srcset="img/tab1small.webp" media="(max-width: 480px)" type="image/webp">
+							<img src="img/tab1small.webp" alt="heroplate" width="690" height="400">
+						</picture>
+						<div class="desc">
+							<span>Stunning Color and Intricate Detail</span>
+							<p>Prints</p>
+							<div class="btn">
+								<span>Shop Now</span>
+							</div>
+						</div>
+					</a>
+
+					<a href="#" class="elem">
+						<picture>
+							<source srcset="img/tab2.webp" media="(min-width: 481px)" type="image/webp">
+					        <source srcset="img/tab2small.webp" media="(max-width: 480px)" type="image/webp">
+							<img src="img/tab2small.webp" alt="heroplate" width="690" height="400">
+						</picture>
+						<div class="desc">
+							<span>Transform Your Space with Exquisite Pieces</span>
+							<p>Wall Art</p>
+							<div class="btn">
+								<span>Shop Now</span>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="top__product">
+		<div class="container">
+			<div class="outer__top">
+				<div class="title">
+					<h6>Top Products</h6>
+				</div>
+				<div class="grid">
+					<div class="elem">
+						<a href="#" class="media">
+							<picture>
+								<source srcset="img/product1.webp" media="(min-width: 481px)" type="image/webp">
+						        <source srcset="img/product1mobile.webp" media="(max-width: 480px)" type="image/webp">
+								<img src="img/product1mobile.webp" alt="heroplate" width="350" height="231">
+							</picture>
+						</a>
+						<div class="desc">
+							<span>Giclee Prints</span>
+							<p>Exceptional quality fine art reproductions with rich colors and fine detail, perfect for art and photography.</p>
+							<div class="btn">
+								<a href="#">Learn More</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="elem">
+						<a href="#" class="media">
+							<picture>
+								<source srcset="img/product2.webp" media="(min-width: 481px)" type="image/webp">
+						        <source srcset="img/product2mobile.webp" media="(max-width: 480px)" type="image/webp">
+								<img src="img/product2mobile.webp" alt="heroplate" width="350" height="231">
+							</picture>
+						</a>
+						<div class="desc">
+							<span>Photo Prints</span>
+							<p>High-resolution photographs, offering sharp detail and vibrant color accuracy for stunning visual impact.</p>
+							<div class="btn">
+								<a href="#">Learn More</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="elem">
+						<a href="#" class="media">
+							<picture>
+								<source srcset="img/product3.webp" media="(min-width: 481px)" type="image/webp">
+						        <source srcset="img/product3mobile.webp" media="(max-width: 480px)" type="image/webp">
+								<img src="img/product3mobile.webp" alt="heroplate" width="350" height="231">
+							</picture>
+						</a>
+						<div class="desc">
+							<span>Gallery Wraps</span>
+							<p>Canvas prints stretched over wooden frames, providing a professional presentation that is ready to hang.</p>
+							<div class="btn">
+								<a href="#">Learn More</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="elem">
+						<a href="#" class="media">
+							<picture>
+								<source srcset="img/product4.webp" media="(min-width: 481px)" type="image/webp">
+						        <source srcset="img/product4mobile.webp" media="(max-width: 480px)" type="image/webp">
+								<img src="img/product4mobile.webp" alt="heroplate" width="350" height="231">
+							</picture>
+						</a>
+						<div class="desc">
+							<span>Mounted Prints</span>
+							<p>Custom images expertly printed on to high-quality paper and mounted on to durable substrates.</p>
+							<div class="btn">
+								<a href="#">Learn More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="articles__wrapper">
+		<div class="container">
+			<div class="outer__articles">
+				<div class="title">
+					<h2>Stackhouse Printing</h2>
+					<p>We offer a variety of printing options to suit your needs. From art printing services to custom photo printing, we have the expertise and equipment to deliver exceptional results.</p>
+				</div>
+				<div class="articles">
+					<div class="elem__article">
+						<div class="desc">
+							<div class="inner__desc">
+								<h6>Art Printing Services</h6>
+								<p>Our art printing services are known for their accurate colors and fine details. This makes them the top choice for artists and photographers when they want high-quality reproductions of their work.</p>
+								<div class="btn">
+									<a href="#">Print You Art</a>
+								</div>
+							</div>
+						</div>
+						<div class="media">
+							<picture>
+								<source srcset="img/article1.webp" media="(min-width: 481px)" type="image/webp">
+						        <source srcset="img/article1mob.webp" media="(max-width: 480px)" type="image/webp">
+								<img src="img/article1mob.webp" alt="heroplate" width="840" height="560">
+							</picture>
+						</div>
+					</div>
+
+
+					<div class="elem__article">
+						<div class="media">
+							<picture>
+								<source srcset="img/article2.webp" media="(min-width: 481px)" type="image/webp">
+						        <source srcset="img/article2mob.webp" media="(max-width: 480px)" type="image/webp">
+								<img src="img/article2mob.webp" alt="heroplate" width="840" height="560">
+							</picture>
+						</div>
+						<div class="desc">
+							<div class="inner__desc">
+								<h6>Professional Photo Printing</h6>
+								<p>Turn your most treasured moments into stunning, large photo prints that bring your memories to life. Our prints are great for creating a gallery wall, giving a thoughtful gift, or showcasing your photography skills. Preserve and display your special moments with us.</p>
+								<div class="btn">
+									<a href="#">Print Your Photos</a>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+
+
+					<div class="elem__article">
+						<div class="desc">
+							<div class="inner__desc">
+								<h6>High-Quality Canvas Printing</h6>
+								<p>Canvas prints are a popular choice for displaying art or photos. This presentation style involves printing the artwork or photo directly onto high-quality canvas and coating with a uv protection. A great option for displaying art or photos in a professional setting.</p>
+								<div class="btn">
+									<a href="#">Print Your Canvas</a>
+								</div>
+							</div>
+						</div>
+						<div class="media">
+							<picture>
+								<source srcset="img/article3.webp" media="(min-width: 481px)" type="image/webp">
+						        <source srcset="img/article3mob.webp" media="(max-width: 480px)" type="image/webp">
+								<img src="img/article3mob.webp" alt="heroplate" width="840" height="560">
+							</picture>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="customers">
+		<div class="container">
+			<div class="outer__customers">
+				<div class="title">
+					<h2>What Our Customers Say</h2>
+					<p>See what our satisfied customers are saying about their experiences with The Stackhouse!</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="ad__wrapper">
+		<div class="container">
+			<div class="outer__ad">
+				<div class="inn">
+					<h2>Unlock 25% Off Printing!</h2>
+					<p>Subscribe to our newsletter for instant savings. Plus, get exclusive offers and product updates delivered straight to your inbox.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="back__top">
+			<a href="#">Back to the top <span><img src="img/arrow.svg" alt="arrow" width="16" height="16" loading="lazy"></span></a>
+		</div>
+		<div class="container">
+			<div class="socials">
+				<a aria-label="Facebook" class="facebook" target="_blank" rel="noopener" href="https://www.facebook.com/thestackhouseprintery"><img src="img/soc1.svg" alt="soc" width="17" height="17" loading="lazy"></a>
+				<a aria-label="Instagram" class="instagram" target="_blank" rel="noopener" href="https://www.instagram.com/thestackhouseprintery/"><img src="img/soc2.svg" alt="soc" width="17" height="17" loading="lazy"></a>
+			</div>
+			<div class="menus__wrapper">
+				<div class="left__menu">
+					<a href="#" class="subtitle">The Stackhouse</a>
+					<ul>
+						<li><a href="#">805 S Pace Boulevard <br>
+						Pensacola, Florida, 32502</a></li>
+						<li>Monday - Friday <br>
+						9:00 AM - 5:00 PM CST</li>
+						<li><a href="#">(850) 361-8060</a></li>
+						<li><a href="mailto:support@thestackhouse.com">support@thestackhouse.com</a></li>
+					</ul>
+				</div>
+				<div class="main__menu">
+					<div class="elem">
+						<h6>How It Works</h6>
+						<ul>
+							<li><a href="#">Uploading Your Artwork</a></li>
+							<li><a href="#">Customizing Your Print Order</a></li>
+							<li><a href="#">Shipping and Production</a></li>
+							<li><a href="#">Care and Handling</a></li>
+							<li><a href="#">Satisfaction Guarantee</a></li>
+							<li><a href="#">Refund Policy</a></li>
+						</ul>
+					</div>
+
+					<div class="elem">
+						<h6>Resources</h6>
+						<ul>
+							<li><a href="#">Product Guide</a></li>
+							<li><a href="#">Product Pricing</a></li>
+							<li><a href="#">Media Info</a></li>
+							<li><a href="#">Gift Cards</a></li>
+							<li><a href="#">Free Media Sample Set</a></li>
+							<li><a href="#">Rewards Program</a></li>
+						</ul>
+					</div>
+
+
+					<div class="elem">
+						<h6>Support</h6>
+						<ul>
+							<li><a href="#">Contact Us</a></li>
+							<li><a href="#">Legacy Website</a></li>
+							<li><a href="#">File Transfer Request</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+							<li><a href="#">Terms and Conditions</a></li>
+							<li><a href="#">Report a Bug</a></li>
+							<li><a href="#">Pro Account Application</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="bottom__info">
+				<div class="left">
+					<p>Copyright © 2024 The Stackhouse Printery</p>
+				</div>
+				<div class="right">
+					<img src="img/paym1.svg" alt="paym" width="48" height="30" loading="lazy">
+					<img src="img/paym2.svg" alt="paym" width="48" height="30" loading="lazy">
+					<img src="img/paym3.svg" alt="paym" width="48" height="30" loading="lazy">
+					<img src="img/paym4.svg" alt="paym" width="48" height="30" loading="lazy">
+					<img src="img/paym5.svg" alt="paym" width="48" height="30" loading="lazy">
+					<img src="img/paym6.svg" alt="paym" width="48" height="30" loading="lazy">
+					<img src="img/paym7.svg" alt="paym" width="48" height="30" loading="lazy">
+					<img src="img/paym8.svg" alt="paym" width="48" height="30" loading="lazy">
+					<img src="img/paym9.svg" alt="paym" width="48" height="30" loading="lazy">
+					<img src="img/paym10.svg" alt="paym" width="48" height="30" loading="lazy">
+					<img src="img/paym11.svg" alt="paym" width="48" height="30" loading="lazy">
+					<img src="img/paym12.svg" alt="paym" width="48" height="30" loading="lazy">
+					<img src="img/paym13.svg" alt="paym" width="48" height="30" loading="lazy">
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	 <script>
+
+	 	function loadStylesheet(url) {
+		    if (!url) {
+		        console.error('URL стиля не указан');
+		        return;
+		    }		    
+		    if (document.querySelector(`link[href="${url}"]`)) {
+		        console.log('Стиль уже загружен');
+		        return;
+		    }
+		    const link = document.createElement('link');
+		    link.rel = 'stylesheet';
+		    link.href = url;		    
+		    document.head.appendChild(link);
+		    link.onload = () => {
+		        console.log('Стиль успешно загружен:', url);
+		    };
+		    link.onerror = () => {
+		        console.error('Ошибка при загрузке стиля:', url);
+		    };
+		}
+
+		loadStylesheet('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css');
+		loadStylesheet('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css');
+
+        document.addEventListener('DOMContentLoaded', function () {
+            function loadScript(src, integrity, crossorigin) {
+                return new Promise((resolve, reject) => {
+                    const script = document.createElement('script');
+                    script.src = src;
+                    if (integrity) script.integrity = integrity;
+                    if (crossorigin) script.crossOrigin = crossorigin;
+                    script.onload = () => resolve();
+                    script.onerror = () => reject(new Error(`Failed to load script ${src}`));
+                    document.body.appendChild(script);
+                });
+            }
+
+            loadScript('https://code.jquery.com/jquery-3.7.1.min.js', 
+                       'sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=', 
+                       'anonymous')
+            	.then(() => loadScript('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js' , 'sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==' , 'anonymous'))
+                .then(() => loadScript('js/script.js'))
+                .catch(error => console.error(error));
+        });
+    </script>
+	<!-- <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="js/script.js"></script> -->
+</body>
+</html>

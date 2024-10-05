@@ -1,0 +1,1393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		@media (max-width: 991px){
+			.small__squares .inn__slider{
+				display: flex;
+			}
+		}
+	</style>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+	    rel="preload"
+	    href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap"
+	    as="style"
+	    onload="this.onload=null;this.rel='stylesheet'"
+	/>
+	<noscript>
+	    <link
+	        href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap"
+	        rel="stylesheet"
+	        type="text/css"
+	    />
+	</noscript>
+
+	<link rel="preload" as="image" href="img/logo.webp" />
+	<link rel="preload" as="image" href="img/search.svg" />
+	<link rel="preload" as="image" href="img/shop.svg" />
+	<link rel="preload" as="image" href="img/bigslide1.webp" />
+	<link rel="preload" as="image" href="img/small1.avif" />
+	<link rel="preload" as="image" href="img/small2.avif" />
+	<link rel="preload" as="image" href="img/small3.avif" />
+	<link rel="preload" as="image" href="img/small4.avif" />
+</head>
+<body>
+	<svg xmlns="http://www.w3.org/2000/svg" style="display: none" id="loox-rating-icon-svg-store">
+	<defs>
+		<clipPath id="looxicons-rating-icon-fill_star-pointy-fill__a">
+			<path d="M0 0h24v24H0z"></path>
+		</clipPath>
+
+		<clipPath id="looxicons-rating-icon-line_star-pointy-line__a">
+			<path d="M0 0h24v24H0z"></path>
+		</clipPath>
+	</defs>
+	<symbol id="looxicons-rating-icon-fill" viewBox="0 0 24 24" fill="currentcolor">
+		<g clip-path="url(#star-pointy-fill__a)">
+			<path d="m12 19.261-7.416 4.151 1.656-8.335L0 9.306l8.44-1.002L12 .588l3.56 7.717L24 9.306l-6.24 5.77 1.656 8.336L12 19.262Z"></path>
+		</g>
+	</symbol>
+	<symbol id="looxicons-rating-icon-line" viewBox="0 0 24 24" fill="currentcolor">
+		<g clip-path="url(#star-pointy-line__a)">
+			<path d="m12 19.261-7.416 4.151 1.656-8.335L0 9.306l8.44-1.002L12 .588l3.56 7.717L24 9.306l-6.24 5.77 1.656 8.336L12 19.262Zm0-2.41 4.465 2.5-.997-5.019 3.756-3.475-5.081-.602L12 5.608l-2.143 4.648-5.081.601 3.756 3.475-.997 5.019L12 16.85Z"></path>
+		</g>
+	</symbol>
+	<defs>
+		<style>
+			.lx-icon-fill {
+				--lx-fill-width: calc(100% - var(--lx-rating-percent, 0%));
+				clip-path: inset(0 var(--lx-fill-width, 0) 0 0);
+			}
+			.lx-icon-line {
+				clip-path: inset(0 0 0 var(--lx-rating-percent, 0%));
+			}
+			[data-lx-fill='empty'] {
+				--lx-rating-percent: 0%;
+			}
+			[data-lx-fill='half'] {
+				--lx-rating-percent: 50%;
+			}
+			[data-lx-fill='full'] {
+				--lx-rating-percent: 100%;
+			}
+		</style>
+
+		<g id="looxicons-rating-icon">
+			<use href="#looxicons-rating-icon-line" class="lx-icon-line"></use>
+			<use href="#looxicons-rating-icon-fill" class="lx-icon-fill"></use>
+		</g>
+	</defs>
+</svg>
+	<div class="overlay"></div>
+	<div class="menu__mobile">
+		<div class="main__step">
+			<div class="title">
+				<h6>Menu</h6>
+				<a href="#">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+				</a>
+			</div>
+			<ul>
+				<li><a href="#" class="sub__menu" data-id="printing">Printing <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+				  <title>Right</title>
+				  <path d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"></path><path d="M0-.25h24v24H0z" fill="none"></path>
+				</svg></a></li>
+				<li><a href="#">Art Scanning</a></li>
+				<li><a href="#" class="sub__menu" data-id="info">Info <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+				  <title>Right</title>
+				  <path d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"></path><path d="M0-.25h24v24H0z" fill="none"></path>
+				</svg></a></li>
+				<li><a href="#" class="order__now">Order Now</a></li>
+				<li><a href="#">Account</a></li>
+			</ul>
+		</div>
+
+		<div class="secondary__step" data-id="printing">
+			<div class="back__btn">
+				<a href="#"><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+				  <title>Left</title>
+				  <path d="M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z"></path><path d="M0-.5h24v24H0z" fill="none"></path>
+				</svg> Back</a>
+			</div>
+			<ul>
+				<li><a href="#" class="inner__menu" data-id="prints">Prints <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+				  <title>Right</title>
+				  <path d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"></path><path d="M0-.25h24v24H0z" fill="none"></path>
+				</svg></a></li>
+				<li><a href="#" class="inner__menu" data-id="wallart">Wall Art <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+				  <title>Right</title>
+				  <path d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"></path><path d="M0-.25h24v24H0z" fill="none"></path>
+				</svg></a></li>
+				<li><a href="#" class="inner__menu" data-id="packaged">Packaged <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+				  <title>Right</title>
+				  <path d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"></path><path d="M0-.25h24v24H0z" fill="none"></path>
+				</svg></a></li>
+				<li><a href="#" class="inner__menu" data-id="samples">Samples <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+				  <title>Right</title>
+				  <path d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"></path><path d="M0-.25h24v24H0z" fill="none"></path>
+				</svg></a></li>
+			</ul>
+		</div>
+
+		<div class="secondary__step" data-id="prints" data-parent='printing'>
+			<div class="back__btn">
+				<a href="#"><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+				  <title>Left</title>
+				  <path d="M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z"></path><path d="M0-.5h24v24H0z" fill="none"></path>
+				</svg> Back</a>
+			</div>
+			<ul>
+				<li><a href="#">Giclee </a></li>
+				<li><a href="#">Photo </a></li>
+				<li><a href="#">Canvas </a></li>
+				<li><a href="#">Minis </a></li>
+			</ul>
+		</div>
+
+
+		<div class="secondary__step" data-id="wallart" data-parent='printing'>
+			<div class="back__btn">
+				<a href="#"><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+				  <title>Left</title>
+				  <path d="M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z"></path><path d="M0-.5h24v24H0z" fill="none"></path>
+				</svg> Back</a>
+			</div>
+			<ul>
+				<li><a href="#">Mounts </a></li>
+				<li><a href="#">Gallery Wraps </a></li>
+			</ul>
+		</div>
+
+		<div class="secondary__step" data-id="packaged" data-parent='printing'>
+			<div class="back__btn">
+				<a href="#"><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+				  <title>Left</title>
+				  <path d="M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z"></path><path d="M0-.5h24v24H0z" fill="none"></path>
+				</svg> Back</a>
+			</div>
+			<ul>
+				<li><a href="#">Bagged </a></li>
+				<li><a href="#">Retail Ready </a></li>
+				<li><a href="#">Matting Package</a></li>
+			</ul>
+		</div>
+
+		<div class="secondary__step" data-id="samples" data-parent='printing'>
+			<div class="back__btn">
+				<a href="#"><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+				  <title>Left</title>
+				  <path d="M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z"></path><path d="M0-.5h24v24H0z" fill="none"></path>
+				</svg> Back</a>
+			</div>
+			<ul>
+				<li><a href="#">Media Samples </a></li>
+			</ul>
+		</div>
+
+
+
+		<div class="secondary__step" data-id="info">
+			<div class="back__btn">
+				<a href="#"><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+				  <title>Left</title>
+				  <path d="M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z"></path><path d="M0-.5h24v24H0z" fill="none"></path>
+				</svg> Back</a>
+			</div>
+			<ul>
+				<li><a href="#">Get Started</a></li>
+				<li><a href="#">Pricing</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">FAQ</a></li>
+				<li><a href="#">Contact Us</a></li>
+				<li><a href="#">Consultation</a></li>
+			</ul>
+		</div>
+	</div>
+	<header>
+		<div class="top__header">
+			<div class="container">
+				<div class="mobile__info">
+					<div class="menu">
+						<a href="#">
+							<span></span>
+							<span></span>
+							<span></span>
+						</a>
+					</div>
+					<div class="logo">
+						<a href="#">
+							<img src="img/logo.webp" alt="logo" width="150" height="52">
+						</a>
+					</div>
+				</div>
+				<div class="outer__header">
+					<div class="float"></div>
+					<div class="search">
+						<div class="search__box" style="display:none;">
+							<form action="">
+								<input type="text" placeholder="Search...">
+								<button type="submit"><svg width="19px" height="21px" viewBox="0 0 19 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							  <g  stroke-width="0.5">
+							    <g transform="translate(0.000000, 0.472222)">
+							      <path d="M14.3977778,14.0103889 L19,19.0422222 L17.8135556,20.0555556 L13.224,15.0385 C11.8019062,16.0671405 10.0908414,16.619514 8.33572222,16.6165556 C3.73244444,16.6165556 0,12.8967778 0,8.30722222 C0,3.71766667 3.73244444,0 8.33572222,0 C12.939,0 16.6714444,3.71977778 16.6714444,8.30722222 C16.6739657,10.4296993 15.859848,12.4717967 14.3977778,14.0103889 Z M8.33572222,15.0585556 C12.0766111,15.0585556 15.1081667,12.0365 15.1081667,8.30827778 C15.1081667,4.58005556 12.0766111,1.558 8.33572222,1.558 C4.59483333,1.558 1.56327778,4.58005556 1.56327778,8.30827778 C1.56327778,12.0365 4.59483333,15.0585556 8.33572222,15.0585556 Z"></path>
+							    </g>
+							  </g>
+							</svg></button>
+							</form>
+						</div>
+						<a href="#">
+							<img src="img/search.svg" alt="search" width="21" height="21">
+						</a>
+					</div>
+					<div class="profile">
+						<a href="#">
+							<svg aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+							  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+							  <circle cx="12" cy="7" r="4"></circle>
+							</svg>
+						</a>
+					</div>
+					<div class="shop">
+						<a href="#">
+							<img src="img/shop.svg" alt="shop" width="24" height="24">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header__menu">
+			<div class="container">
+				<div class="menu">
+					
+					<a href="#">
+						<img src="img/logo.webp" alt="logo" width="150" height="52">
+					</a>
+					<div class="menu__list">
+						<ul>
+							<li>
+								<a href="#" class="printing__btn">Printing <span><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+							    <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"></path>
+							    <path d="M0-.75h24v24H0z" fill="none"></path>
+							</svg></span></a>
+							<div class="packages__menu">
+								<div class="list">
+									<div class="el">
+										<a href="#">Prints</a>
+										<ul>
+											<li><a href="#">Giclee</a></li>
+											<li><a href="#">Photo</a></li>
+											<li><a href="#">Canvas</a></li>
+											<li><a href="#">Minis</a></li>
+										</ul>
+									</div>
+									<div class="el">
+										<a href="#">Wall Art</a>
+										<ul>
+											<li><a href="#">Mounts</a></li>
+											<li><a href="#">Gallery Wraps</a></li>
+										</ul>
+									</div>
+									<div class="el">
+										<a href="#">Packaged</a>
+										<ul>
+											<li><a href="#">Bagged</a></li>
+											<li><a href="#">Retail Ready</a></li>
+											<li><a href="#">Matting Package</a></li>
+										</ul>
+									</div>
+									<div class="el">
+										<a href="#">Samples</a>
+										<ul>
+											<li><a href="#">Media Samples</a></li>
+										</ul>
+									</div>
+								</div>
+								<a href="#" class="more">
+									<div class="media">
+										<img src="img/frontpage.webp" alt="front" loading="lazy" width="225" height="145">
+									</div>
+									<span>View All Products</span>
+								</a>
+							</div>
+						</li>
+							<li><a href="#">Art Scanning</a></li>
+							<li class="info__relative">
+								<a href="#">Info <span><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+							    <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"></path>
+							    <path d="M0-.75h24v24H0z" fill="none"></path>
+							</svg></span></a>
+							<div class="info__popup">
+								<ul>
+									<li><a href="#">Get Started</a></li>
+									<li><a href="#">Pricing</a></li>
+									<li><a href="#">About Us</a></li>
+									<li><a href="#">Blog</a></li>
+									<li><a href="#">FAQ</a></li>
+									<li><a href="#">Contact Us</a></li>
+									<li><a href="#">Consultation</a></li>
+								</ul>
+							</div>
+						</li>
+							<li><a href="#" class="order">Order Now</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="create__print">
+		<div class="container">
+			<div class="outer__create">
+				<div class="gallery__slider">
+					<div class="gallery__top--hero">
+						<a href="#" class="prev__btn"><svg fill="#fff" viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M 14.51,6.51 14,6 8,12 14,18 14.51,17.49 9.03,12 Z"></path></svg></a>
+						<a href="#" class="next__btn"><svg fill="#fff" viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M 10,6 9.49,6.51 14.97,12 9.49,17.49 10,18 16,12 Z"></path></svg></a>
+						<div class="gallery__big--slider">
+							<div class="slide" data-index="0">
+								<img src="img/bigslide1.webp" alt="bigslide" width="670" height="670">
+							</div>
+							<div class="slide" data-index="1">
+								<img src="img/bigslide2.webp" alt="bigslide" width="670" height="670" loading="lazy">
+							</div>
+							<div class="slide" data-index="2">
+								<img src="img/bigslide3.webp" alt="bigslide" width="670" height="670" loading="lazy">
+							</div>
+							<div class="slide" data-index="3">
+								<img src="img/bigslide4.webp" alt="bigslide" width="670" height="670" loading="lazy">
+							</div>
+						</div>
+					</div>
+					<div class="small__squares">
+						<div class="inn__slider">
+							<div class="slide" data-index="0">
+								<a href="#" >
+									<img src="img/small1.avif" alt="small" width="90" height="90">
+								</a>
+							</div>
+							<div class="slide" data-index="1">
+								<a href="#">
+									<img src="img/small2.avif" alt="small" width="90" height="90">
+								</a>
+							</div>
+							<div class="slide" data-index="2">
+								<a href="#">
+									<img src="img/small3.avif" alt="small" width="90" height="90">
+								</a>
+							</div>
+							<div class="slide" data-index="3">
+								<a href="#">
+									<img src="img/small4.avif" alt="small" width="90" height="90">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="description">
+					<h6>Custom Giclee Fine Art Prints</h6>
+					<div class="stars">
+						<ul>
+							<li><svg class="loox-icon" viewBox="0 0 24 24" data-lx-fill="full"><use href="#looxicons-rating-icon"></use></svg></li>
+							<li><svg class="loox-icon" viewBox="0 0 24 24" data-lx-fill="full"><use href="#looxicons-rating-icon"></use></svg></li>
+							<li><svg class="loox-icon" viewBox="0 0 24 24" data-lx-fill="full"><use href="#looxicons-rating-icon"></use></svg></li>
+							<li><svg class="loox-icon" viewBox="0 0 24 24" data-lx-fill="full"><use href="#looxicons-rating-icon"></use></svg></li>
+							<li><svg class="loox-icon" viewBox="0 0 24 24" data-lx-fill="full"><use href="#looxicons-rating-icon"></use></svg></li>
+						</ul>
+						<p>5/5</p>
+					</div>
+					<div class="btn">
+						<a href="#">CREATE YOUR PRINT</a>
+					</div>
+					<div class="info__">
+						<div class="el">
+							<a href="#">
+								<span>SIZES</span>
+								<span>4x4" to 40x60"</span>
+							</a>
+						</div>
+						<div class="el">
+							<a href="#">
+								<span>PRICING</span>
+								<span>Starting at $3</span>
+							</a>
+						</div>
+						<div class="el">
+							<a href="#">
+								<span>TURNAROUND TIME</span>
+								<span>3 Business Days</span>
+							</a>
+						</div>
+					</div>
+					<div class="list">
+						<ul>
+							<li>Acid-free, pH-neutral papers</li>
+							<li>Inkjet-printed with archival pigment inks</li>
+							<li>Available with various border sizes</li>
+						</ul>
+					</div>
+					<span class="satisfaction">100% Satisfaction Guarantee</span>
+					<div class="accordions">
+						<div class="elem">
+							<div class="head">
+								<p>Details</p>
+								<div class="symbol">
+									<span class="plus"></span>
+									<span class="minus"></span>
+								</div>
+							</div>
+							<div class="content" style="display:none;">
+								<p>Giclee Paper Prints represent the pinnacle of fine art printing. We custom print your artwork or photos onto high-quality papers with exceptional color and precision. These are Ideal for artists, photographers, and those valuing top-tier reproduction.</p>
+								<p class="subtitle">Fine Art Paper Types</p>
+								<ul>
+									<li>Hot Press Bright</li>
+									<li>Cold Press Bright</li>
+									<li>Photo Rag</li>
+									<li>William Turner</li>
+									<li>Fineart Baryta</li>
+								</ul>
+								<p class="subtitle">Border Options</p>
+								<p>Added to Image Dimensions On All Sides</p>
+								<ul>
+									<li>Borderless</li>
+									<li>1/4-inch Additional Border</li>
+									<li>1-inch Additional Border</li>
+								</ul>
+								<p class="subtitle">Giclee Printing Process</p>
+								<p>Our Giclee printing technique offers an expansive spectrum of colors, seamless transitions, and vividly detailed color portrayal.</p>
+							</div>
+						</div>
+
+
+						<div class="elem">
+							<div class="head">
+								<p>Shipping Options</p>
+								<div class="symbol">
+									<span class="plus"></span>
+									<span class="minus"></span>
+								</div>
+							</div>
+							<div class="content" style="display:none;">
+								<p>Average Transit Time</p>
+								<p><span class="bold">Economy:</span> 5-8 days</p>
+								<p><span class="bold">Standard:</span> 3-4 days</p>
+								<p><span class="bold">Express:</span> 1-2 days</p>
+								<p><span class="bold">Economy International</span> 6-18+ days</p>
+								<a href="#">More Info</a>
+							</div>
+						</div>
+
+
+
+
+						<div class="elem">
+							<div class="head">
+								<p>Preparing Files for Print</p>
+								<div class="symbol">
+									<span class="plus"></span>
+									<span class="minus"></span>
+								</div>
+							</div>
+							<div class="content" style="display:none;">
+								<p>Giclee Paper Prints represent the pinnacle of fine art printing. We custom print your artwork or photos onto high-quality papers with exceptional color and precision. These are Ideal for artists, photographers, and those valuing top-tier reproduction.</p>
+								<p class="subtitle">Fine Art Paper Types</p>
+								<ul>
+									<li>Hot Press Bright</li>
+									<li>Cold Press Bright</li>
+									<li>Photo Rag</li>
+									<li>William Turner</li>
+									<li>Fineart Baryta</li>
+								</ul>
+								<p class="subtitle">Border Options</p>
+								<p>Added to Image Dimensions On All Sides</p>
+								<ul>
+									<li>Borderless</li>
+									<li>1/4-inch Additional Border</li>
+									<li>1-inch Additional Border</li>
+								</ul>
+								<p class="subtitle">Giclee Printing Process</p>
+								<p>Our Giclee printing technique offers an expansive spectrum of colors, seamless transitions, and vividly detailed color portrayal.</p>
+							</div>
+						</div>
+
+
+						<div class="elem">
+							<div class="head">
+								<p>Volume Discounts</p>
+								<div class="symbol">
+									<span class="plus"></span>
+									<span class="minus"></span>
+								</div>
+							</div>
+							<div class="content" style="display:none;">
+								<p>Average Transit Time</p>
+								<p><span class="bold">Economy:</span> 5-8 days</p>
+								<p><span class="bold">Standard:</span> 3-4 days</p>
+								<p><span class="bold">Express:</span> 1-2 days</p>
+								<p><span class="bold">Economy International</span> 6-18+ days</p>
+								<a href="#">More Info</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="benefits">
+		<div class="container">
+			<div class="outer__benefits">
+				<div class="elem">
+					<span><svg class="cc-icon cc-icon--map_pin" aria-hidden="true" focusable="false" role="presentation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" style="width: 30px;height: 30px;"><path d="M6.72 14.63L7.5 14l.78.63-.78.96-.78-.96zm1.41-1.44L7.5 14s-.25-.3-.63-.81C5.63 11.54 3 7.8 3 5.79 3 3.14 5.01 1 7.5 1S12 3.14 12 5.79c0 2.02-2.63 5.75-3.87 7.4zm.15 1.44L7.5 14l-.78.63-.01-.02-.04-.05a26.53 26.53 0 01-.67-.87c-.43-.58-1.01-1.37-1.59-2.26A24.32 24.32 0 012.8 8.62 7.07 7.07 0 012 5.79C2 2.65 4.4 0 7.5 0S13 2.65 13 5.79c0 .9-.36 1.9-.8 2.83-.45.95-1.04 1.93-1.61 2.81a43.67 43.67 0 01-2.26 3.13l-.04.05v.01h-.01z" fill-rule="evenodd"></path>
+				      <path d="M7.5 7a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm0 1a2.5 2.5 0 100-5 2.5 2.5 0 000 5z" fill-rule="evenodd"></path></svg></span>
+			      <h6>Archival Value</h6>
+			      <p>Giclee art prints are certified archival, maintaining their color and quality for up to 100 years.</p>
+				</div>
+
+				<div class="elem">
+					<span><svg class="cc-icon cc-icon--heart" aria-hidden="true" focusable="false" role="presentation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" style="width: 30px;height: 30px;"><path d="M8.86 4.38a2.78 2.78 0 013.72-.3c1.4 1.2 1.2 3.11.19 4.13L7.98 13.1c-.05.06-.1.06-.19 0L3.01 8.2a2.8 2.8 0 01.19-4.1c1.06-.9 2.7-.76 3.74.28l.96.98.96-.98zm-.96-.45l.24-.25a3.78 3.78 0 015.07-.38l.01.01v.01a3.82 3.82 0 01.26 5.59l-4.79 4.9a1.12 1.12 0 01-1.45.12l-.1-.06L2.3 8.91a3.8 3.8 0 01.26-5.57 3.79 3.79 0 015.1.33l.01.01.24.25z" fill-rule="evenodd"></path></svg></span>
+			      <h6>The Perfect Match</h6>
+			      <p>Our giclee fine art prints are perfect for artwork, digital downloads, custom illustrations, watercolors, and fine art photography prints.</p>
+				</div>
+
+
+				<div class="elem">
+					<span><svg class="cc-icon cc-icon--map_pin" aria-hidden="true" focusable="false" role="presentation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" style="width: 30px;height: 30px;"><path d="M6.72 14.63L7.5 14l.78.63-.78.96-.78-.96zm1.41-1.44L7.5 14s-.25-.3-.63-.81C5.63 11.54 3 7.8 3 5.79 3 3.14 5.01 1 7.5 1S12 3.14 12 5.79c0 2.02-2.63 5.75-3.87 7.4zm.15 1.44L7.5 14l-.78.63-.01-.02-.04-.05a26.53 26.53 0 01-.67-.87c-.43-.58-1.01-1.37-1.59-2.26A24.32 24.32 0 012.8 8.62 7.07 7.07 0 012 5.79C2 2.65 4.4 0 7.5 0S13 2.65 13 5.79c0 .9-.36 1.9-.8 2.83-.45.95-1.04 1.93-1.61 2.81a43.67 43.67 0 01-2.26 3.13l-.04.05v.01h-.01z" fill-rule="evenodd"></path>
+      <path d="M7.5 7a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm0 1a2.5 2.5 0 100-5 2.5 2.5 0 000 5z" fill-rule="evenodd"></path></svg></span>
+			      <h6>Made in the USA</h6>
+			      <p>Every print is printed and packaged by our skilled staff in the Florida Panhandle.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="paper__types">
+		<div class="container">
+			<div class="outer__paper">
+				<div class="desc">
+					<span>Elevate Your Art with Giclee Printing</span>
+					<h6>Giclee Fine Art Prints</h6>
+					<p>At The Stackhouse, we take pride in offering premium fine art prints that serve not just as mere reproductions but as masterpieces that breathe life into every space they inhabit. Our commitment to excellence is evident in every aspect of our giclee printing process, from selecting the finest materials to employing state-of-the-art printing technology.</p>
+					<p>Our Fine Art prints are crafted on museum-quality, acid-free papers that promise longevity and are archival, ensuring that the vibrancy and depth of the artwork endure through the years. We use high-resolution, wide-gamut inkjet printers that capture every nuance of the original piece, from subtle tonal variations to rich, saturated colors.</p>
+				</div>
+				<div class="media">
+					<img src="img/herocover.webp" alt="herocover" loading="lazy" width="560" height="375">
+				</div>
+			</div>
+			<div class="bottom__types">
+				<table>
+					<tr>
+						<td>
+							<span>
+							PAPER TYPES</span>
+						</td>
+						<td>
+							<p>A carefully chosen assortment of giclee fine art papers, picked for their unmatched quality.</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<span>BORDERS</span>
+						</td>
+						<td>
+							<p>Borderless, 1/4-inch, or 1-inch added border options are available.</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<span>PRINTING</span>
+						</td>
+						<td>
+							<p>12-Color Giclee Printing.</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<span>SIZES</span>
+						</td>
+						<td>
+							<p>From 4x4" to 40x60".</p>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	<div class="papers__grid">
+		<div class="container">
+			<div class="outer__papers">
+				<h6>Fine Art Papers</h6>
+				<div class="grid">
+					<div class="elem">
+						<div class="media">
+							<img src="img/paper1.webp" alt="paper" loading="lazy" width="440" height="295">
+						</div>
+						<div class="desc">
+							<p>Hot Press Bright</p>
+							<span>Epson</span>
+							<div class="text">
+								<p>A smooth, matte finish and bright white surface define Hot Press Bright, making it perfect for giclee prints that demand color vibrancy and sharp detail. It’s a top pick for artists and photographers alike.</p>
+								<p>Smooth Matte | 300gsm | 16 mil | 100% Cotton Rag</p>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="elem">
+						<div class="media">
+							<img src="img/paper2.webp" alt="paper" loading="lazy" width="440" height="295">
+						</div>
+						<div class="desc">
+							<p>Cold Press Bright</p>
+							<span>Epson</span>
+							<div class="text">
+								<p>With its textured finish and bright white tone, Cold Press Bright offers an exceptional base for fine art works requiring depth and intensity. Ideal for reproductions of watercolor paintings and fine detail artwork.</p>
+								<p>Textured Matte | 305gsm | 19 mil | 100% Cotton Rag</p>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="elem">
+						<div class="media">
+							<img src="img/paper3.webp" alt="paper" loading="lazy" width="440" height="295">
+						</div>
+						<div class="desc">
+							<p>Photo Rag</p>
+							<span>Hahnemuehle</span>
+							<div class="text">
+								<p>Combining a velvety matte surface with outstanding color reproduction, Photo Rag is versatile, making it suitable for detailed art and photography. Its 100% cotton base adds a luxurious feel to every print.</p>
+								<p>Textured Matte | 308 gsm | 18.9 mil | 100% Cotton Fiber</p>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="elem">
+						<div class="media">
+							<img src="img/paper4.webp" alt="paper" loading="lazy" width="440" height="295">
+						</div>
+						<div class="desc">
+							<p>William Turner</p>
+							<span>Hahnemuehle</span>
+							<div class="text">
+								<p>William Turner’s distinct texture mimics traditional watercolor paper, adding character and depth to art reproductions. Made from 100% cotton, it provides a unique tactile experience, perfect for high-end artworks.</p>
+								<p>Textured Matte | 310 gsm | 24.4 mil | 100% Cotton Fiber</p>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="elem">
+						<div class="media">
+							<img src="img/paper5.webp" alt="paper" loading="lazy" width="440" height="295">
+						</div>
+						<div class="desc">
+							<p>FineArt Baryta</p>
+							<span>Hahnemuehle</span>
+							<div class="text">
+								<p>Known for its glossy finish and baryta coating, Fine Art Baryta enhances black and color densities, offering high detail sharpness. It’s the go-to choice for high contrast images, black and white photography, and exhibition prints.</p>
+								<p>Textured Glossy | 325 gsm | 16.14 mil | 100% Alpha Cellulose</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="info__block">
+		<div class="container">
+			<div class="outer__info bigger__image">
+				
+				<div class="desc">
+					<h6>Fine Art Border Options</h6>
+					<p>Enhance your artwork with our border options, added beyond your image's dimensions for the perfect finish.</p>
+					<p><span class="bold">Borderless:</span> Your image reaches every print edge, offering a modern-looking, uninterrupted visual experience.</p>
+					<p><span class="bold">1/4-Inch Additional Border:</span> Adds a slight edge around your image, providing an elegant separation between the artwork and its surrounding space.</p>
+					<p><span class="bold">1-Inch Additional Border:</span> Enhances the visual presentation of your artwork and adds depth. It’s a perfect choice if you intend to display the print without framing or if you need more space for signing.</p>
+					<div class="btn">
+						<a href="#">More Info</a>
+					</div>
+				</div>
+				<div class="media smaller">
+					<img src="img/media2.webp" alt="info" loading="lazy" width="640" height="600">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="info__block grey">
+		<div class="container">
+			<div class="outer__info">
+				<div class="media">
+					<img src="img/info.webp" alt="info" loading="lazy" width="700" height="450">
+				</div>
+				<div class="desc">
+					<h6>Giclee Fine Art Printing</h6>
+					<div class="list">
+						<div class="el">
+							<span>What is Giclee Printing?</span>
+							<p>Giclee printing refers to top-tier prints crafted with cutting-edge inkjet printers, archival inks, and premium media. Its unmatched quality and durability make it the ideal choice for exquisite fine art and photo reproductions.</p>
+						</div>
+						<div class="el">
+							<span>How are our giclee prints crafted?</span>
+							<p>We employ the state-of-the-art Epson SureColor P9570, equipped with UltraChrome PRO12 Ink (12-color) for an expansive color range. Paired with premium media from top-tier paper manufacturers, our giclee prints boast vibrant hues and impressive lightfastness.</p>
+						</div>
+					</div>
+					<div class="btn">
+						<a href="#">More Info</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="sizes__prints">
+		<div class="container">
+			<div class="outer__sizes">
+				<h6>Giclee Print Sizes & Prices</h6>
+				<div class="table__box">
+					<table>
+						<tr>
+							<th>
+								<p>Print Size</p>
+							</th>
+							<th>
+								<p>Hot Press Bright <br> Cold Press Bright</p>
+							</th>
+							<th>
+								<p>Photo Rag <br> William Turner <br> FineArt Baryta</p>
+							</th>
+						</tr>
+					<tr>
+					<td><p>4x4</p></td>
+					<td><p>$3</p></td>
+					<td><p>$4</p></td>
+					</tr>
+					<tr>
+					<td><p>4x6</p></td>
+					<td><p>$4</p></td>
+					<td><p>$5</p></td>
+					</tr>
+					<tr>
+					<td><p>5x5</p></td>
+					<td><p>$4</p></td>
+					<td><p>$5</p></td>
+					</tr>
+					<tr>
+					<td><p>5x7</p></td>
+					<td><p>$5</p></td>
+					<td><p>$6</p></td>
+					</tr>
+					<tr>
+					<td><p>6x6</p></td>
+					<td><p>$5</p></td>
+					<td><p>$6</p></td>
+					</tr>
+					<tr>
+					<td><p>6x7.5</p></td>
+					<td><p>$6</p></td>
+					<td><p>$7</p></td>
+					</tr>
+					<tr>
+					<td><p>6x8</p></td>
+					<td><p>$7</p></td>
+					<td><p>$8</p></td>
+					</tr>
+					<tr>
+					<td><p>6x9</p></td>
+					<td><p>$7</p></td>
+					<td><p>$8</p></td>
+					</tr>
+					<tr>
+					<td><p>6x10</p></td>
+					<td><p>$8</p></td>
+					<td><p>$9</p></td>
+					</tr>
+					<tr>
+					<td><p>7x10</p></td>
+					<td><p>$9</p></td>
+					<td><p>$10</p></td>
+					</tr>
+					<tr>
+					<td><p>8x8</p></td>
+					<td><p>$8</p></td>
+					<td><p>$10</p></td>
+					</tr>
+					<tr>
+					<td><p>8x10</p></td>
+					<td><p>$10</p></td>
+					<td><p>$12</p></td>
+					</tr>
+					<tr>
+					<td><p>8x11</p></td>
+					<td><p>$11</p></td>
+					<td><p>$13</p></td>
+					</tr>
+					<tr>
+					<td><p>8x12</p></td>
+					<td><p>$12</p></td>
+					<td><p>$14</p></td>
+					</tr>
+					<tr>
+					<td><p>8x18</p></td>
+					<td><p>$17</p></td>
+					<td><p>$20</p></td>
+					</tr>
+					<tr>
+					<td><p>8x24</p></td>
+					<td><p>$22</p></td>
+					<td><p>$26</p></td>
+					</tr>
+					<tr>
+					<td><p>8.5x11</p></td>
+					<td><p>$12</p></td>
+					<td><p>$14</p></td>
+					</tr>
+					<tr>
+					<td><p>9x12</p></td>
+					<td><p>$13</p></td>
+					<td><p>$15</p></td>
+					</tr>
+					<tr>
+					<td><p>9x15</p></td>
+					<td><p>$16</p></td>
+					<td><p>$19</p></td>
+					</tr>
+					<tr>
+					<td><p>9x18</p></td>
+					<td><p>$19</p></td>
+					<td><p>$22</p></td>
+					</tr>
+					<tr>
+					<td><p>10x10</p></td>
+					<td><p>$12</p></td>
+					<td><p>$14</p></td>
+					</tr>
+					<tr>
+					<td><p>10x12</p></td>
+					<td><p>$14</p></td>
+					<td><p>$17</p></td>
+					</tr>
+					<tr>
+					<td><p>10x13</p></td>
+					<td><p>$15</p></td>
+					<td><p>$18</p></td>
+					</tr>
+					<tr>
+					<td><p>10x14</p></td>
+					<td><p>$17</p></td>
+					<td><p>$19</p></td>
+					</tr>
+					<tr>
+					<td><p>10x15</p></td>
+					<td><p>$18</p></td>
+					<td><p>$21</p></td>
+					</tr>
+					<tr>
+					<td><p>10x16</p></td>
+					<td><p>$19</p></td>
+					<td><p>$22</p></td>
+					</tr>
+					<tr>
+					<td><p>10x20</p></td>
+					<td><p>$23</p></td>
+					<td><p>$27</p></td>
+					</tr>
+					<tr>
+					<td><p>10x30</p></td>
+					<td><p>$34</p></td>
+					<td><p>$40</p></td>
+					</tr>
+					<tr>
+					<td><p>11x14</p></td>
+					<td><p>$18</p></td>
+					<td><p>$21</p></td>
+					</tr>
+					<tr>
+					<td><p>11x17</p></td>
+					<td><p>$22</p></td>
+					<td><p>$26</p></td>
+					</tr>
+					<tr>
+					<td><p>11x19</p></td>
+					<td><p>$24</p></td>
+					<td><p>$28</p></td>
+					</tr>
+					<tr>
+					<td><p>11x20</p></td>
+					<td><p>$25</p></td>
+					<td><p>$30</p></td>
+					</tr>
+					<tr>
+					<td><p>12x12</p></td>
+					<td><p>$17</p></td>
+					<td><p>$20</p></td>
+					</tr>
+					<tr><td><p>12x15</p></td>
+					<td><p>$21</p></td>
+					<td><p>$25</p></td>
+					</tr>
+					<tr>
+					<td><p>12x16</p></td>
+					<td><p>$22</p></td>
+					<td><p>$26</p></td>
+					</tr>
+					<tr>
+					<td><p>12x18</p></td>
+					<td><p>$25</p></td>
+					<td><p>$29</p></td>
+					</tr>
+					<tr>
+					<td><p>12x20</p></td>
+					<td><p>$27</p></td>
+					<td><p>$32</p></td>
+					</tr>
+					<tr>
+					<td><p>12x24</p></td>
+					<td><p>$32</p></td>
+					<td><p>$38</p></td>
+					</tr>
+					<tr>
+					<td><p>12x36</p></td>
+					<td><p>$48</p></td>
+					<td><p>$57</p></td>
+					</tr>
+					<tr>
+					<td><p>13x16</p></td>
+					<td><p>$24</p></td>
+					<td><p>$28</p></td>
+					</tr>
+					<tr>
+					<td><p>13x19</p></td>
+					<td><p>$28</p></td>
+					<td><p>$33</p></td>
+					</tr>
+					<tr>
+					<td><p>13x21</p></td>
+					<td><p>$31</p></td>
+					<td><p>$37</p></td>
+					</tr>
+					<tr>
+					<td><p>14x14</p></td>
+					<td><p>$23</p></td>
+					<td><p>$27</p></td>
+					</tr>
+					<tr>
+					<td><p>14x18</p></td>
+					<td><p>$29</p></td>
+					<td><p>$34</p></td>
+					</tr>
+					<tr>
+					<td><p>14x21</p></td>
+					<td><p>$33</p></td>
+					<td><p>$39</p></td>
+					</tr>
+					<tr>
+					<td><p>15x20</p></td>
+					<td><p>$34</p></td>
+					<td><p>$40</p></td>
+					</tr>
+					<tr>
+					<td><p>15x45</p></td>
+					<td><p>$74</p></td>
+					<td><p>$88</p></td>
+					</tr>
+					<tr>
+					<td><p>16x16</p></td>
+					<td><p>$29</p></td>
+					<td><p>$34</p></td>
+					</tr>
+					<tr>
+					<td><p>16x20</p></td>
+					<td><p>$36</p></td>
+					<td><p>$43</p></td>
+					</tr>
+					<tr>
+					<td><p>16x24</p></td>
+					<td><p>$43</p></td>
+					<td><p>$51</p></td>
+					</tr>
+					<tr>
+					<td><p>16x48</p></td>
+					<td><p>$84</p></td>
+					<td><p>$100</p></td>
+					</tr>
+					<tr>
+					<td><p>18x22</p></td>
+					<td><p>$44</p></td>
+					<td><p>$52</p></td>
+					</tr>
+					<tr>
+					<td><p>18x24</p></td>
+					<td><p>$48</p></td>
+					<td><p>$57</p></td>
+					</tr>
+					<tr>
+					<td><p>18x27</p></td>
+					<td><p>$54</p></td>
+					<td><p>$64</p></td>
+					</tr>
+					<tr>
+					<td><p>20x20</p></td>
+					<td><p>$45</p></td>
+					<td><p>$53</p></td>
+					</tr>
+					<tr>
+					<td><p>20x25</p></td>
+					<td><p>$55</p></td>
+					<td><p>$66</p></td>
+					</tr>
+					<tr>
+					<td><p>20x30</p></td>
+					<td><p>$66</p></td>
+					<td><p>$79</p></td>
+					</tr>
+					<tr>
+					<td><p>20x40</p></td>
+					<td><p>$88</p></td>
+					<td><p>$104</p></td>
+					</tr>
+					<tr>
+					<td><p>20x60</p></td>
+					<td><p>$131</p></td>
+					<td><p>$156</p></td>
+					</tr>
+					<tr>
+					<td><p>21x28</p></td>
+					<td><p>$65</p></td>
+					<td><p>$77</p></td>
+					</tr>
+					<tr>
+					<td><p>22x33</p></td>
+					<td><p>$80</p></td>
+					<td><p>$95</p></td>
+					</tr>
+					<tr>
+					<td><p>24x24</p></td>
+					<td><p>$63</p></td>
+					<td><p>$75</p></td>
+					</tr>
+					<tr>
+					<td><p>24x30</p></td>
+					<td><p>$79</p></td>
+					<td><p>$94</p></td>
+					</tr>
+					<tr>
+					<td><p>24x32</p></td>
+					<td><p>$84</p></td>
+					<td><p>$100</p></td>
+					</tr>
+					<tr>
+					<td><p>24x36</p></td>
+					<td><p>$94</p></td>
+					<td><p>$112</p></td>
+					</tr>
+					<tr>
+					<td><p>24x48</p></td>
+					<td><p>$125</p></td>
+					<td><p>$149</p></td>
+					</tr>
+					<tr>
+					<td><p>26x39</p></td>
+					<td><p>$111</p></td>
+					<td><p>$132</p></td>
+					</tr>
+					<tr>
+					<td><p>27x36</p></td>
+					<td><p>$106</p></td>
+					<td><p>$126</p></td>
+					</tr>
+					<tr>
+					<td><p>28x35</p></td>
+					<td><p>$107</p></td>
+					<td><p>$127</p></td>
+					</tr>
+					<tr>
+					<td><p>28x42</p></td>
+					<td><p>$128</p></td>
+					<td><p>$153</p></td>
+					</tr>
+					<tr>
+					<td><p>30x30</p></td>
+					<td><p>$98</p></td>
+					<td><p>$117</p></td>
+					</tr>
+					<tr>
+					<td><p>30x40</p></td>
+					<td><p>$131</p></td>
+					<td><p>$156</p></td>
+					</tr>
+					<tr>
+					<td><p>30x45</p></td>
+					<td><p>$147</p></td>
+					<td><p>$175</p></td>
+					</tr>
+					<tr>
+					<td><p>30x60</p></td>
+					<td><p>$195</p></td>
+					<td><p>$233</p></td>
+					</tr>
+					<tr>
+					<td><p>32x40</p></td>
+					<td><p>$139</p></td>
+					<td><p>$166</p></td>
+					</tr>
+					<tr>
+					<td><p>32x48</p></td>
+					<td><p>$167</p></td>
+					<td><p>$199</p></td>
+					</tr>
+					<tr>
+					<td><p>33x44</p></td>
+					<td><p>$158</p></td>
+					<td><p>$188</p></td>
+					</tr>
+					<tr>
+					<td><p>34x51</p></td>
+					<td><p>$188</p></td>
+					<td><p>$224</p></td>
+					</tr>
+					<tr>
+					<td><p>36x36</p></td>
+					<td><p>$141</p></td>
+					<td><p>$168</p></td>
+					</tr>
+					<tr>
+					<td><p>36x45</p></td>
+					<td><p>$176</p></td>
+					<td><p>$210</p></td>
+					</tr>
+					<tr>
+					<td><p>36x48</p></td>
+					<td><p>$187</p></td>
+					<td><p>$223</p></td>
+					</tr>
+					<tr>
+					<td><p>36x54</p></td>
+					<td><p>$211</p></td>
+					<td><p>$251</p></td>
+					</tr>
+					<tr>
+					<td><p>36x60</p></td>
+					<td><p>$234</p></td>
+					<td><p>$279</p></td>
+					</tr>
+					<tr>
+					<td><p>39x52</p></td>
+					<td><p>$220</p></td>
+					<td><p>$262</p></td>
+					</tr>
+					<tr>
+					<td><p>38x57</p></td>
+					<td><p>$235</p></td>
+					<td><p>$280</p></td>
+					</tr>
+					<tr>
+					<td><p>40x50</p></td>
+					<td><p>$217</p></td>
+					<td><p>$258</p></td>
+					</tr>
+					<tr>
+					<td><p>40x60</p></td>
+					<td><p>$260</p></td>
+					<td><p>$310</p></td>
+					</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="faq__wrapper">
+		<div class="container">
+			<div class="outer__faq">
+				<div class="inn">
+					<h6>FAQs About Our Fine Art Prints</h6>
+					<div class="list">
+						<div class="elem">
+							<p>What makes Fine Art Prints different from standard prints?</p>
+							<span>Fine Art Prints at The Stackhouse are printed on superior, museum-quality, acid-free papers using archival inks. This combination ensures exceptional detail, durability, and color fidelity, making them ideal for artists and collectors.</span>
+						</div>
+						<div class="elem">
+							<p>Can I choose the type of paper for my Fine Art Print?</p>
+							<span>Yes, we offer a selection of fine art papers, including Hot Press Bright, Cold Press Bright, Photo Rag, William Turner, and Fine Art Baryta, each with unique textures and finishes to complement your artwork.</span>
+						</div>
+						<div class="elem">
+							<p>How should I handle and display Fine Art Prints?</p>
+							<span>Handle your prints with care, ideally with cotton gloves, and frame them behind UV-protective glass to prevent fading. Keep them out of direct sunlight and in stable temperature and humidity conditions.</span>
+						</div>
+						<div class="elem">
+							<p>Are Fine Art Prints suitable for all types of images?</p>
+							<span>Absolutely! Whether it’s photography, digital art, or traditional mediums like watercolor and oil, our Fine Art Prints can beautifully reproduce a wide range of artworks.</span>
+						</div>
+						<div class="elem">
+							<p>What sizes are available for Fine Art Prints?</p>
+							<span>We offer standard sizes from small to large and provide custom sizing options. Whether you need a compact 4x4" or a large-scale print, we can accommodate your specific requirements.</span>
+						</div>
+						<div class="elem">
+							<p>How long do Fine Art Prints last?</p>
+							<span>Our Fine Art Prints are designed to last over a century without significant fading when properly cared for, thanks to the archival quality of our inks and papers.</span>
+						</div>
+						<div class="elem">
+							<p>Is it possible to print limited editions of my artwork?</p>
+							<span>Certainly! We can work with you to create limited edition runs of your artwork, including numbering and if required, providing a certificate of authenticity.</span>
+						</div>
+						<div class="elem">
+							<p>What is the process for ensuring color accuracy in Fine Art Prints?</p>
+							<span>Our printing process includes regular calibration of printers and using color profiles that ensure the closest match to the original artwork. We recommend providing files in RGB for the best color accuracy.</span>
+						</div>
+						<div class="elem">
+							<p>What is the turnaround time for fine art prints?</p>
+							<span>Our standard turnaround time for fine art prints is 3 business days for printing. Shipping times vary based on your chosen method and location. For specific timelines or rush orders, please contact us directly.</span>
+						</div>
+						<div class="elem">
+							<p>What if my Fine Art Print doesn’t meet my expectations?</p>
+							<span>At The Stackhouse, your satisfaction is our top priority. If your print doesn’t meet your expectations, please reach out to us within 14 days of receipt. While we don't offer pre-print proofs, we're committed to working with you to resolve any issues and ensure your complete satisfaction with the final product.</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="back__top">
+			<a href="#">Back to the top <span><img src="img/arrow.svg" alt="arrow" width="16" height="16" loading="lazy"></span></a>
+		</div>
+		<div class="container">
+			<div class="socials">
+				<a aria-label="Facebook" class="facebook" target="_blank" rel="noopener" href="https://www.facebook.com/thestackhouseprintery"><img src="img/soc1.svg" alt="soc" width="17" height="17" loading="lazy"></a>
+				<a aria-label="Instagram" class="instagram" target="_blank" rel="noopener" href="https://www.instagram.com/thestackhouseprintery/"><img src="img/soc2.svg" alt="soc" width="17" height="17" loading="lazy"></a>
+			</div>
+			<div class="menus__wrapper">
+				<div class="left__menu">
+					<a href="#" class="subtitle">The Stackhouse</a>
+					<ul>
+						<li><a href="#">805 S Pace Boulevard <br>
+						Pensacola, Florida, 32502</a></li>
+						<li>Monday - Friday <br>
+						9:00 AM - 5:00 PM CST</li>
+						<li><a href="#">(850) 361-8060</a></li>
+						<li><a href="mailto:support@thestackhouse.com">support@thestackhouse.com</a></li>
+					</ul>
+				</div>
+				<div class="main__menu">
+					<div class="elem">
+						<h6>How It Works</h6>
+						<ul>
+							<li><a href="#">Uploading Your Artwork</a></li>
+							<li><a href="#">Customizing Your Print Order</a></li>
+							<li><a href="#">Shipping and Production</a></li>
+							<li><a href="#">Care and Handling</a></li>
+							<li><a href="#">Satisfaction Guarantee</a></li>
+							<li><a href="#">Refund Policy</a></li>
+						</ul>
+					</div>
+
+					<div class="elem">
+						<h6>Resources</h6>
+						<ul>
+							<li><a href="#">Product Guide</a></li>
+							<li><a href="#">Product Pricing</a></li>
+							<li><a href="#">Media Info</a></li>
+							<li><a href="#">Gift Cards</a></li>
+							<li><a href="#">Free Media Sample Set</a></li>
+							<li><a href="#">Rewards Program</a></li>
+						</ul>
+					</div>
+
+
+					<div class="elem">
+						<h6>Support</h6>
+						<ul>
+							<li><a href="#">Contact Us</a></li>
+							<li><a href="#">Legacy Website</a></li>
+							<li><a href="#">File Transfer Request</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+							<li><a href="#">Terms and Conditions</a></li>
+							<li><a href="#">Report a Bug</a></li>
+							<li><a href="#">Pro Account Application</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="bottom__info">
+				<div class="left">
+					<p>Copyright © 2024 The Stackhouse Printery</p>
+				</div>
+				<div class="right">
+					<img src="img/paym1.svg" alt="paym" width="48" height="30" loading="lazy">
+					<img src="img/paym2.svg" alt="paym" width="48" height="30" loading="lazy">
+					<img src="img/paym3.svg" alt="paym" width="48" height="30" loading="lazy">
+					<img src="img/paym4.svg" alt="paym" width="48" height="30" loading="lazy">
+					<img src="img/paym5.svg" alt="paym" width="48" height="30" loading="lazy">
+					<img src="img/paym6.svg" alt="paym" width="48" height="30" loading="lazy">
+					<img src="img/paym7.svg" alt="paym" width="48" height="30" loading="lazy">
+					<img src="img/paym8.svg" alt="paym" width="48" height="30" loading="lazy">
+					<img src="img/paym9.svg" alt="paym" width="48" height="30" loading="lazy">
+					<img src="img/paym10.svg" alt="paym" width="48" height="30" loading="lazy">
+					<img src="img/paym11.svg" alt="paym" width="48" height="30" loading="lazy">
+					<img src="img/paym12.svg" alt="paym" width="48" height="30" loading="lazy">
+					<img src="img/paym13.svg" alt="paym" width="48" height="30" loading="lazy">
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	 <script>
+
+	 	function loadStylesheet(url) {
+		    if (!url) {
+		        console.error('URL стиля не указан');
+		        return;
+		    }		    
+		    if (document.querySelector(`link[href="${url}"]`)) {
+		        console.log('Стиль уже загружен');
+		        return;
+		    }
+		    const link = document.createElement('link');
+		    link.rel = 'stylesheet';
+		    link.href = url;		    
+		    document.head.appendChild(link);
+		    link.onload = () => {
+		        console.log('Стиль успешно загружен:', url);
+		    };
+		    link.onerror = () => {
+		        console.error('Ошибка при загрузке стиля:', url);
+		    };
+		}
+
+		loadStylesheet('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css');
+		loadStylesheet('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css');
+
+        document.addEventListener('DOMContentLoaded', function () {
+            function loadScript(src, integrity, crossorigin) {
+                return new Promise((resolve, reject) => {
+                    const script = document.createElement('script');
+                    script.src = src;
+                    if (integrity) script.integrity = integrity;
+                    if (crossorigin) script.crossOrigin = crossorigin;
+                    script.onload = () => resolve();
+                    script.onerror = () => reject(new Error(`Failed to load script ${src}`));
+                    document.body.appendChild(script);
+                });
+            }
+
+            loadScript('https://code.jquery.com/jquery-3.7.1.min.js', 
+                       'sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=', 
+                       'anonymous')
+            	.then(() => loadScript('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js' , 'sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==' , 'anonymous'))
+                .then(() => loadScript('js/script.js'))
+                .catch(error => console.error(error));
+        });
+    </script>
+	<!-- <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="js/script.js"></script> -->
+</body>
+</html>
