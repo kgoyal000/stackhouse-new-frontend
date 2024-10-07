@@ -1,0 +1,92 @@
+@import "body.scss";
+@import "footer.scss";
+@import "ad.scss";
+@import "customers.scss";
+@import "articles.scss";
+@import "topproduct.scss";
+@import "infowrapper.scss";
+@import "features.scss";
+@import "header.scss";
+@import "heroslider.scss";
+@import "faq.scss";
+@import "sizes.scss";
+@import "infobox.scss";
+@import "papergrid.scss";
+@import "papertypes.scss";
+@import "benefits.scss";
+@import "createprint.scss";
+@import "cart.scss";
+@import "collectionhero.scss";
+@import "collectionlist.scss";
+@import "moredetails.scss";
+@import "account.scss";
+@import "popup.scss";
+
+.check__ {
+  display: inline-flex;
+  align-items:flex-start;
+  justify-content:flex-start;
+  & p{
+  	margin:0px;
+  	margin-left: 8px;
+  	font-size: 14px;
+  	line-height: 18px;
+  	color:#545454;
+  	position: relative;
+  	top:2px;
+  	& a{
+  		color:#25718A;
+  		text-decoration: underline;
+  	}
+  }
+}
+
+/* Hide the browser's default checkbox */
+.check__ input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark__ {
+  position: relative;
+  min-width: 22px;
+  max-width: 22px;
+  min-height: 22px;
+  max-height: 22px;
+  border:1px solid #D8D8D8;
+  background-color:#fff;
+}
+/* When the checkbox is checked, add a blue background */
+.check__ input:checked ~ .checkmark__ {
+  background-color: #EE4B2B;
+  border-color:#EE4B2B;
+}
+
+/* Create the checkmark__/indicator (hidden when not checked) */
+.checkmark__:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark__ when checked */
+.check__ input:checked ~ .checkmark__:after {
+  display: block;
+}
+
+/* Style the checkmark__/indicator */
+.check__ .checkmark__:after {
+  left: 7px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
